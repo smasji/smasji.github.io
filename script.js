@@ -14,7 +14,7 @@ function scrollLock(){
 //nav nav-pills nav-fill
 //nav justify-content-center
 function logScroll(){
-	const scrollPerc = parseInt(2*window.scrollY/document.body.offsetHeight*100+10)
+	const scrollPerc = parseInt((window.scrollY+window.innerHeight)/document.body.offsetHeight*100)
 	console.log(`${scrollPerc}%`)
 	document.querySelector('.progress-bar').style.width = `${scrollPerc}%`;
 

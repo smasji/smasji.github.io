@@ -1,1 +1,81 @@
 @import "node_modules/bootstrap/scss/bootstrap";
+
+$active-color: #476FF4;
+$body-bg: #000;
+$nav-color: #1B2A5B;
+$nav-hover-color: #314DA8;
+
+
+
+#Home-nav.active {
+	background-color: $active-color;
+}
+#Page1-nav.active {
+	background-color: $active-color;
+}
+#Link-nav.active {
+	background-color: $active-color;
+}
+#Disabled-nav.active {
+	background-color: $active-color;
+}
+
+p.nav-link{
+	color: $active-color;
+	text-align: center;
+}
+#nav-logo {
+	color: white;
+	text-align: center;
+}
+#navbar {
+	position: fixed;
+	width: 100%;
+	background-color: $nav-color;
+	height: 40px;
+	z-index: 10000;
+}
+
+.progress-bar{
+	background-color: $active-color;
+}
+
+.nav-item:hover {
+	background-color: $nav-hover-color;
+	height: 40px;
+}
+
+.box{
+
+}
+
+body {
+	position: relative;
+}
+
+.rounded-3{
+	border-radius: 3%;
+}
+
+
+
+#navvie {
+	height: 50px;
+
+}
+
+#topcontainer {
+	padding-top: 50px;
+}
+
+
+#pbar {
+	width: 100%;
+	margin-top: 40px;
+	z-index: 10000;
+}
+
+
+#hjgasd {
+	background-color: blue;
+}

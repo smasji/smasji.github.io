@@ -9928,5 +9928,73 @@ h3 {
     border-color: #dee2e6;
   }
 }
+#Home-nav.active {
+  background-color: #476FF4;
+}
+
+#Page1-nav.active {
+  background-color: #476FF4;
+}
+
+#Link-nav.active {
+  background-color: #476FF4;
+}
+
+#Disabled-nav.active {
+  background-color: #476FF4;
+}
+
+p.nav-link {
+  color: #476FF4;
+  text-align: center;
+}
+
+#nav-logo {
+  color: white;
+  text-align: center;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #1B2A5B;
+  height: 40px;
+  z-index: 10000;
+}
+
+.progress-bar {
+  background-color: #476FF4;
+}
+
+.nav-item:hover {
+  background-color: #314DA8;
+  height: 40px;
+}
+
+body {
+  position: relative;
+}
+
+.rounded-3 {
+  border-radius: 3%;
+}
+
+#navvie {
+  height: 50px;
+}
+
+#topcontainer {
+  padding-top: 50px;
+}
+
+#pbar {
+  width: 100%;
+  margin-top: 40px;
+  z-index: 10000;
+}
+
+#hjgasd {
+  background-color: blue;
+}
 
 /*# sourceMappingURL=main.css.map */
