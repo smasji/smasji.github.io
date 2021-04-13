@@ -7,41 +7,33 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-//navbar scroll fix
-function scrollLock(){
-	document.querySelector('#navbar').style.top = `${window.scrollY}px`;
-}
-//nav nav-pills nav-fill
-//nav justify-content-center
+
+
 function logScroll(){
-	const scrollPerc = parseInt((window.scrollY+window.innerHeight)/document.body.offsetHeight*100)
+	// const scrollPerc = parseInt((window.scrollY+window.innerHeight)/document.body.offsetHeight*100)
+	const offsetMax = document.body.offsetHeight-window.innerHeight;
+	const scrollPerc = 100 - parseInt((offsetMax-window.scrollY)/offsetMax*100)
 	console.log(`${scrollPerc}%`)
-	document.querySelector('.progress-bar').style.width = `${scrollPerc}%`;
 
-	if (scrollPerc >= 0 & scrollPerc < 25) {
-		document.querySelectorAll('.nav-link').forEach(p => {
-			p.className= "nav-link";
+	if (scrollPerc >= 0 & scrollPerc < 38) {
+		document.querySelectorAll('.taskbar-buttons > button').forEach(button => {
+			button.className= "taskbar-button";
 		})
-		document.querySelector('#Home-nav').className = "nav-link active";
+		document.querySelector('#about-me-button').className = "taskbar-button active";
 
-	}else if (scrollPerc >= 25 & scrollPerc < 50) {
-		document.querySelectorAll('.nav-link').forEach(p => {
-			p.className= "nav-link";
+	}else if (scrollPerc >= 38 & scrollPerc < 60) {
+		document.querySelectorAll('.taskbar-buttons > button').forEach(button => {
+			button.className= "taskbar-button";
 		})
-		document.querySelector('#Page1-nav').className = "nav-link active";
+		document.querySelector('#second-button').className = "taskbar-button active";
 
-	}else if (scrollPerc >= 50 & scrollPerc < 75) {
-		document.querySelectorAll('.nav-link').forEach(p => {
-			p.className= "nav-link";
+	}else if (scrollPerc >= 60 & scrollPerc < 85) {
+		document.querySelectorAll('.taskbar-buttons > button').forEach(button => {
+			button.className= "taskbar-button";
 		})
-		document.querySelector('#Link-nav').className = "nav-link active";
+		document.querySelector('#third-button').className = "taskbar-button active";
 
-	}else if (scrollPerc >= 75) {
-			document.querySelectorAll('.nav-link').forEach(p => {
-				p.className= "nav-link";
-			})
-			document.querySelector('#Disabled-nav').className = "nav-link active";
-		}
+	}
 
 
 }

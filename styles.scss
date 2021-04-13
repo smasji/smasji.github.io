@@ -4,6 +4,7 @@ $bg-color-right: #00ff62;
 $taskbar-color: #004cff;
 $taskbar-active-color: #00bfff;
 $taskbar-hover-color: rgba(255,255,255,50%);
+$title-color: white;
 
 @font-face {
     font-family: gothic;
@@ -33,6 +34,7 @@ body {
 	padding: 0;
 	background-color: $taskbar-color;
 	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	z-index: 10000;
 }
 
 .taskbar-buttons {
@@ -77,6 +79,7 @@ body {
 	font-family: gothic, sans-serif;
 	text-align: center;
 	text-shadow: 1px 1px 4px #000000;
+	user-select: none;
 }
 
 .about-me {
@@ -98,6 +101,7 @@ body {
 	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+
 .about-text{
 	width: 50%;
 	margin-top: 20px;
@@ -106,6 +110,31 @@ body {
 	height: 800px;
 	background-color: rgba(255,255,255,10%);
 	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-text > h1 {
+	color: $title-color;
+	text-shadow: -2px 2px 0px #000000;
+	transition: .5s;
+
+}
+
+.about-text > h1:not(h1:first-of-type):hover {
+	font-size: 2.5rem;
+	color: $taskbar-active-color;
+
+}
+
+.about-text > h1:first-of-type {
+	font-size: 5rem;
+
+
+}
+
+.about-text > h1:first-of-type:hover {
+	font-size: 6rem;
+	color: $taskbar-active-color;
+
 }
 
 img.portret {
@@ -118,3 +147,18 @@ img.portret {
 .lotsofp {
 	padding-top: 50px;
 }
+
+
+// .speach-cloud{
+// 	display: flex;
+// 	transform: translate(-50%, 100%);
+// 	min-width: 15%;
+// 	min-height: 15%;
+// 	min-width: 15%;
+// 	min-height: 15%;
+// 	border-radius: 40%;
+// 	background-color: rgba(255,255,255, 30%);
+// 	position: absolute;
+// 	justify-content: center;
+// 	align-items: center;
+// }

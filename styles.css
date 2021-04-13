@@ -25,6 +25,7 @@ body {
   padding: 0;
   background-color: #004cff;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 10000;
 }
 
 .taskbar-buttons {
@@ -69,6 +70,7 @@ body {
   font-family: gothic, sans-serif;
   text-align: center;
   text-shadow: 1px 1px 4px #000000;
+  user-select: none;
 }
 
 .about-me {
@@ -98,6 +100,26 @@ body {
   height: 800px;
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-text > h1 {
+  color: white;
+  text-shadow: -2px 2px 0px #000000;
+  transition: 0.5s;
+}
+
+.about-text > h1:not(h1:first-of-type):hover {
+  font-size: 2.5rem;
+  color: #00bfff;
+}
+
+.about-text > h1:first-of-type {
+  font-size: 5rem;
+}
+
+.about-text > h1:first-of-type:hover {
+  font-size: 6rem;
+  color: #00bfff;
 }
 
 img.portret {
