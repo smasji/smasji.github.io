@@ -1,0 +1,120 @@
+
+$bg-color-left: #00ccff;
+$bg-color-right: #00ff62;
+$taskbar-color: #004cff;
+$taskbar-active-color: #00bfff;
+$taskbar-hover-color: rgba(255,255,255,50%);
+
+@font-face {
+    font-family: gothic;
+    src: url('fonts/GOTHIC.ttf')  format('truetype');
+}
+
+*, *::before , *::after {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background: linear-gradient(to right, $bg-color-left, $bg-color-right);
+}
+
+.taskbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	border: none;
+	position: fixed;
+	margin-bottom: 0;
+	padding: 0;
+	background-color: $taskbar-color;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.taskbar-buttons {
+	display: flex;
+	justify-content: center;
+	width: 70%;
+}
+
+.taskbar button {
+	padding: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	cursor: pointer;
+	background-color: $taskbar-color;
+	font-size: 1rem;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+}
+
+.taskbar button:hover {
+	background-color: $taskbar-hover-color;
+}
+
+.taskbar button.active {
+	background-color: $taskbar-active-color;
+
+}
+.logo{
+	display: flex;
+	justify-content: center;
+	width: 30%;
+
+}
+.logo-text {
+	padding: 0;
+	margin-right: 25px;
+	margin-left: 25px;
+	color: lightgreen;
+	font-size: 1.5rem;
+	font-family: gothic, sans-serif;
+	text-align: center;
+	text-shadow: 1px 1px 4px #000000;
+}
+
+.about-me {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 55px;
+
+}
+.about-card{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	padding: 30px;
+	border-radius: 8px;
+	width: 35%;
+	height: 400px;
+	background-color: rgba(255,255,255,50%);
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.about-text{
+	width: 50%;
+	margin-top: 20px;
+	padding: 30px;
+	border-radius: 8px;
+	height: 800px;
+	background-color: rgba(255,255,255,10%);
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img.portret {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.lotsofp {
+	padding-top: 50px;
+}
