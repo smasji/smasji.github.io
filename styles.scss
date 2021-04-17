@@ -1,7 +1,7 @@
 
-$bg-color-left: #00ccff;
-$bg-color-right: #00ff62;
-$taskbar-color: #004cff;
+$bg-color-left: #364451;
+$bg-color-right: #233F58;
+$taskbar-color: #1D2731;
 $taskbar-active-color: #00bfff;
 $taskbar-hover-color: rgba(255,255,255,50%);
 $title-color: white;
@@ -12,8 +12,6 @@ $title-color: white;
 }
 
 *, *::before , *::after {
-	box-sizing: border-box;
-	font-family: sans-serif;
 	font-weight: normal;
 }
 
@@ -83,6 +81,7 @@ body {
 }
 
 .about-me {
+	box-sizing: border-box;
 	display: flex;
 	justify-content: space-around;
 	padding-top: 55px;
