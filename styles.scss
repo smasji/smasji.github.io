@@ -5,6 +5,7 @@ $taskbar-color: #1D2731;
 $taskbar-active-color: #00bfff;
 $taskbar-hover-color: rgba(255,255,255,50%);
 $title-color: white;
+$logo-color: #00bfff;
 
 @font-face {
     font-family: gothic;
@@ -72,12 +73,60 @@ body {
 	padding: 0;
 	margin-right: 25px;
 	margin-left: 25px;
-	color: lightgreen;
+	color: $logo-color;
 	font-size: 1.5rem;
 	font-family: gothic, sans-serif;
 	text-align: center;
 	text-shadow: 1px 1px 4px #000000;
 	user-select: none;
+}
+
+
+.grid-container {
+	padding-top: 40px;
+	font-family: monospace;
+	display: grid;
+}
+.row {
+	width: 100%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+
+
+}
+
+.cell, .text_cell{
+	color: rgba(255,255,255, 20%);
+	height: 3rem;
+	width: 1.5rem;
+	display: grid;
+	place-items: center;
+	grid-row: 3;
+	font-size: 3rem;
+	padding: 7px;
+	user-select: none;
+}
+
+
+@keyframes animation {
+	0%   {color: rgba(255,255,255, 20%);}
+	50%  {color: rgba(255,255,255, 70%);}
+	100% {color: #00bfff;}
+	/* #35FF00 */
+}
+
+@keyframes binary_hover_animation {
+	0%   {color: rgba(255,255,255, 20%);}
+	50%  {color: rgba(255,255,255, 50%);}
+	100% {color: rgba(255,255,255, 20%);}
+}
+
+@keyframes text_hover_animation {
+	0%   {color: #00bfff;}
+	50%  {color: #00FFC2;}
+	/* #CA00FF */
+	100% {color: #00bfff;}
 }
 
 .about-me {
